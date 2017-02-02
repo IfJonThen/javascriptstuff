@@ -4,14 +4,22 @@
 $(function(){
   $(".box").on('click', ()=>{console.log($('.btn').text())});
   $(".btn").on('click',(event)=>{
-    let t = $("#box1")[0].classList;
-    console.log(t);
+    let t = $(event.target).text();
+    // var v = ;
 
-    // let t = $("#box1")[0].classList;
-    t.add(".mbox");
-    console.log(t);
+    switch (t) {
+        case "Small":
+            $(".box").addClass("sbox");
+            break;
+        case "Medium":
+            $(".box2").addClass("mbox");
+            break;
+        case "Large":
+            $(".box3").addClass("mbox");
+            break;
 
-  });
+    }
+});
 
 
 });
