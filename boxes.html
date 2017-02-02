@@ -4,23 +4,37 @@
     <title>JONATHANYUEN</title>
     <link rev="Made" href="mailto:jlyuen@ics.uci.edu">
     <meta charset="UTF-8" name="viewport" content="width=device-width" author="Jonathan Yuen">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"  href="css/boxes.css" media="screen and (min-width:10.5em)"/>
-    <script src="js/jquery-3.1.0.js"></script>
-    <script src="js/boxes.js"></script>
+    <script type="text/javascript" src="js/boxes.js"></script>
 
     <script>
     </script>
 </head>
 <body>
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">
            Boxes
         </h3>
     </div>
-    <div class="panel-body">
+    <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group" role="group" aria-label="hi">
+            <div class="btn" id="smallbtn" data-value="Small">Small</div>
+            <div class="btn" val="Medium">Medium</div>
+            <div class="btn" val="Large">Large</div>
+        </div>
+        <div class="btn-group" role="group" aria-label="..."> </div>
+
+    </div>
+    <div class="panel-body" id="panelbody">
+        <div class="box" id="box1"><p>hi</p></div>
+        <div class="box" id="box2"><p>friend</p></div>
+        <div class="box" id="box3"><p>hello</p></div>
         Panel content
     </div>
     <div class="panel-footer">

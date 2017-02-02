@@ -1,3 +1,28 @@
+
 .box{
 
+    border:2px solid white;
+    color:white;
+    background-color:rgba(0,0,0,1);
+}
+.mbox {
+    height:25%;
+    width:25%;
+}
+.lbox {
+    height:50%;
+    width:50%;
+}
+.sbox {
+    height:10%;
+    width:10%;
+}
+#panelbody{
+    background-color: rgba(0,0,0,0.7);
+    max-width:600px;
+    max-height:600px;
+
+}
+.box p{
+    text-align: center;
 }
