@@ -1,21 +1,10 @@
 
 .box{
-
+    height:25%;
+    width:25%;
     border:2px solid rgba(0,0,0,1);
     color:red;
     background-color:white;
-}
-.mbox {
-    height:25%;
-    width:25%;
-}
-.lbox {
-    height:50%;
-    width:50%;
-}
-.sbox {
-    height:10%;
-    width:10%;
 }
 #panelbody{
     background-color: rgba(0,0,0,0.7);

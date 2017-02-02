@@ -6,20 +6,31 @@ $(function(){
   $(".btn").on('click',(event)=>{
     let t = $(event.target).text();
     // var v = ;
-
+    let height = "5%";
+    let width = "5%";
     switch (t) {
         case "Small":
-            $(".box").addClass("sbox");
+            height="15%";
+            width="15%";
             break;
         case "Medium":
-            $(".box2").addClass("mbox");
+            height ="30%";
+            width= "30%";
             break;
         case "Large":
-            $(".box3").addClass("mbox");
+            height="50%";
+            width="50%";
             break;
-
     }
+    changeDimensions(height,width);
+
 });
-
-
+  var changeDimensions=(height,width)=>{
+        // let elements = document.querySelectorAll(".box");
+        let elements = $(".box");
+        for(let i=0; i< elements.length;i++){
+          elements[i].style.height=height;
+          elements[i].style.width=width;
+      }
+    };
 });
